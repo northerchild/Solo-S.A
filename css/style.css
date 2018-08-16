@@ -3,19 +3,23 @@
     ----------------------------------------
     Fonts: Raleway & Open Sans
     ----------------------------------------
-    Colors:
-        Moon Yellow:         #f4c613
-        Grey:                #212226
-        White Smoke:         #f4f4f4
-        White:               #fff
-        Black:               #000   
 ============================================ */
 
 
 /* =========================================
                 Html, Body
 ============================================ */
-
+:root{
+    /*Colors*/
+    --Moon_Yellow:#f4c613;
+    --Grey:#212226;
+    --White_Smoke:#f4f4f4;
+    --White:#fff;
+    --Black:#000;
+    /*Borders*/
+    --border_white:1px solid #fff;
+    --border_yellow:1px solid #f4c613;   
+}
 html,
 body {
     height: 100%;
@@ -42,14 +46,14 @@ p {
 }
 
 section {
-    background: #fff;
+    
     overflow: hidden;
 }
 
 /*Preloader*/
 
 #preloader {
-    background-color: #fff;
+    background-color: var(--White);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -68,4 +72,102 @@ section {
     height: 70px;
 }
 
+
 /*End Preloader*/
+
+/*Home*/
+#home-bg-video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x:hidden;
+    z-index: -1;
+    background: url("../video/solo.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-heading h1 {
+    color: var(--White);
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#home-heading h1 span {
+    color: var(--Moon_Yellow);
+    font-weight: 500;
+}
+
+#home-text p {
+    color: var(--White);
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/*End Home*/
+
+/*Buttons*/
+.btn-general {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s ease-in-out;
+}
+
+.btn-home {
+    color: var(--White);
+    border: var(--border_white);
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: var(--White);
+    background-color: var(--Moon_Yellow);
+    border: var(--border_yellow);
+}
+/*End Buttons*/
+/*Arrow Down*/
+#arrow-down {
+   color:var(--White);
+   font-size: 32px;
+   width: 32px;
+   height: 32px;
+   text-decoration: none;
+   transition: all 0.5s ease-in-out;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: var(--Moon_Yellow);
+}
+
+.fa-angle-down{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
