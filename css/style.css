@@ -16,6 +16,7 @@
     --White_Smoke:#f4f4f4;
     --White:#fff;
     --Black:#000;
+    --Gray:#f4f4f4;
     /*Borders*/
     --border_white:1px solid #fff;
     --border_yellow:1px solid #f4c613;   
@@ -234,3 +235,72 @@ section {
 }
 
 /*End About 01*/
+
+/*About 02*/
+#about-02 {
+    background-color: var(--Gray);
+}
+
+.content-box-md{
+    padding: 100px 0;
+}
+
+.about-item {
+    background-color: var(--White);
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: all 0.5s ease;
+}
+
+.about-item i {
+    font-size: 3em;
+    margin: 0;
+}
+
+.about-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 100px;
+    height: 3px;
+    background-color: var(--Moon_Yellow);
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+
+/* Hover state */
+
+.about-item:hover {
+    background-color: var(--Moon_Yellow);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: var(--White);
+}
+
+
+.about-item:hover hr {
+    background-color: var(--White);
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
+}
+
+/* Smooth transition */
+.about-item i,h3,p{
+    transition: all 0.5s ease-in-out;
+}
+
+/*End About 02*/
