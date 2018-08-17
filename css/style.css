@@ -46,7 +46,7 @@ p {
 }
 
 section {
-    
+    background: var(--White);
     overflow: hidden;
 }
 
@@ -74,8 +74,28 @@ section {
 
 
 /*End Preloader*/
+/*Header*/
 
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.smooth-scroll{
+    color: var(--White);
+    transition: all 0.8s ease;
+}
+
+.smooth-scroll:hover{
+    color: var(--Moon_Yellow)
+}
+
+/*End Header*/
 /*Home*/
+#home {
+    background: none;
+    height: 100%;
+}
 #home-bg-video{
     position: fixed;
     min-width: 100%;
@@ -151,6 +171,7 @@ section {
     border: var(--border_yellow);
 }
 /*End Buttons*/
+
 /*Arrow Down*/
 #arrow-down {
    color:var(--White);
@@ -159,6 +180,9 @@ section {
    height: 32px;
    text-decoration: none;
    transition: all 0.5s ease-in-out;
+   position: absolute;
+   left: 50%;
+   bottom: 20px;
 }
 
 #arrow-down:hover,
@@ -169,5 +193,44 @@ section {
 .fa-angle-down{
     display: flex;
     justify-content: center;
-    margin-top: -20px;
 }
+/*End Arrow Down*/
+
+/*About 01*/
+.content-box-lg{
+    padding: 100px 0;
+}
+
+.vertical-heading h5{
+    color: var(--Moon_Yellow);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -53px;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 35px;
+    font-size: 3em;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+
+/*End About 01*/
